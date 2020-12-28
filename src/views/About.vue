@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <app-promo/>
     <app-form/>
     <app-about/>
@@ -18,3 +18,8 @@ export default {
   }
 }
 </script>
+<style>
+.row {
+  margin-bottom: 30px;
+}
+</style>

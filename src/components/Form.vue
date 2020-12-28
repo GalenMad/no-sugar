@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2>Напишите нам и мы вам перезвоним !</h2>
-    <div class="container">
       <div class="row">
         <div class="card">
           <form>
@@ -31,7 +30,6 @@
           </form>
         </div>
       </div>
-    </div>
   </div>
 </template>
 <script>
