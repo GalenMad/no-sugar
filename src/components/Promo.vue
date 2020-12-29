@@ -8,7 +8,7 @@
         :key="item.index"
       >
         <div class="card">
-          <img :src="item.img" class="card-img-top" :alt="item.name" />
+          <div class="card-img" :style="{backgroundImage: item.img}"></div>
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <div class="mb-3 bagdes">
@@ -103,9 +103,6 @@ export default {
   margin-top: 30px;
   min-height: 645px;
 }
-h2 {
-  text-align: center;
-}
 .card-body {
   display: flex;
   flex-direction: column;
@@ -113,24 +110,26 @@ h2 {
 .btn-primary {
   width: 100%;
 }
-.card-img-top {
-  max-height: 255px;
-}
+
 .badge {
-  margin: 8px;
+  margin: 3px;
   padding: 8px;
   text-transform: uppercase;
 }
-.badges {
+.bagdes {
   display: flex;
   flex-wrap: wrap;
 }
 .card-price {
-  color: #0d6efd;
+  color:  #0d6efd;
   font-size: 24px;
 }
 .card-price-and-button{
   margin-top: auto;
 }
-
+.card-img {
+  width: 100%;
+  height: 255px;
+  background-size: cover;
+}
 </style>

@@ -1,16 +1,23 @@
 <template>
-  <div>
     <div class="row">
-      <div class="card">
-        <h2>Напишите нам и мы вам перезвоним !</h2>
+      <div class="col-6">
+        <h2>Как сделать заказ персонального десерта?</h2>
+        <ol>
+          <li>Заполните форму справа</li>
+          <li>Мы перезвоним вам, запишем все ваши пожелания и оформим заказ</li>
+          <li>Оплатите и заберите свой тортик/конфеты/всё, что угодно!</li>
+        </ol>
+      </div>
+      <div class="card col-6">
+        <h2>Закажите десерт своей мечты!</h2>
         <form>
           <div class="form-group">
-            <label for="exampleInputName">Ваше имя</label>
-            <input type="text" class="form-control" id="exampleInputName" />
+            <label for="inputName">Ваше имя</label>
+            <input type="text" class="form-control" id="inputName" />
           </div>
           <div class="form-group">
-            <label for="exampleInputPhone">Телефон</label>
-            <input type="tel" class="form-control" id="exampleInputTel" />
+            <label for="inputTel">Телефон</label>
+            <input type="tel" class="form-control" id="inputTel" />
             <small id="telHelp" class="form-text text-muted"
               >Мы не будем рассылать вам спам или рекламные предложения.</small
             >
@@ -29,10 +36,12 @@
         </form>
       </div>
     </div>
-  </div>
 </template>
+
 <script>
-export default {}
+export default {
+
+}
 </script>
 <style scoped>
 h2 {
@@ -50,7 +59,6 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   display: inline-flex;
-  min-height: 300px;
   margin-bottom: 30px;
   justify-content: space-around;
 }
@@ -61,5 +69,10 @@ h2 {
 .form-check-label {
   text-align: left;
   font-size: 90%;
+}
+li{
+  text-align: left;
+  font-weight: bold;
+  font-size: 130%;
 }
 </style>
