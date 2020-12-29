@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-      <div class="col-6">
+      <div class="col-sm-12 col-lg-6">
         <h2>Как сделать заказ персонального десерта?</h2>
         <ol>
           <li>Заполните форму справа</li>
@@ -8,7 +8,7 @@
           <li>Оплатите и заберите свой тортик/конфеты/всё, что угодно!</li>
         </ol>
       </div>
-      <div class="card col-6">
+      <div class="col-sm-12 col-lg-6">
         <h2>Закажите десерт своей мечты!</h2>
         <form>
           <div class="form-group">
@@ -63,7 +63,7 @@ h2 {
   justify-content: space-around;
 }
 .btn {
-  width: 30%;
+  width: 40%;
   margin-bottom: 10px;
 }
 .form-check-label {

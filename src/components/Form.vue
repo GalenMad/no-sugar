@@ -55,7 +55,7 @@ h2 {
   justify-content: space-around;
 }
 .btn {
-  width: 30%;
+  width: 45%;
   margin-bottom: 10px;
 }
 .form-check-label {
