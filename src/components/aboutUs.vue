@@ -3,7 +3,7 @@
     <h2>О нас</h2>
     <div class="row">
       <div
-        class="col-12 col-sm-6 col-lg-4 d-flex"
+        class="col-sm-12 col-lg-4 d-flex"
         v-for="column in about"
         :key="column.index"
       >
@@ -62,6 +62,7 @@ img {
 .card {
   padding: 10px;
   border: 3px solid #0d6efd;
+  margin-bottom: 30px;
 }
 .card-text{
   text-align: left;
