@@ -8,7 +8,9 @@
         :key="item.index"
       >
         <div class="card">
-          <div class="card-img" :style="{backgroundImage: item.img}"></div>
+          <div class="card-header">
+            <div class="card-img" :style="{ backgroundImage: item.img }"></div>
+          </div>
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <div class="mb-3 bagdes">
@@ -22,12 +24,11 @@
             <p class="card-text">
               {{ item.description }}
             </p>
-            <div class="card-price-and-button">
-            <p class="card-price">
-              {{ item.price }} ₽
-            </p>
+          </div>
+
+          <div class="card-footer">
+            <p class="card-price">{{ item.price }} ₽</p>
             <a href="#" class="btn btn-primary">Купить</a>
-            </div>
           </div>
         </div>
       </div>
@@ -46,7 +47,7 @@ export default {
     return {
       catalog: [
         {
-          name: "Тарталетка 'Зеленое яблоко'",
+          name: 'Тарталетка «Зеленое яблоко»',
           description:
             'Тарталетка с яблочным муссом, компоте из зелёных яблок и фисташковым бисквитом пропитанным соком юдзу',
           badgeList: ['Популярный десерт'],
@@ -81,7 +82,11 @@ export default {
           name: 'Банановое полено с мускатным орехом',
           description:
             'Нежный банановый мусс с мускатным орехом, компоте из ягод малины и клубники. В основе- морковный бисквит. ',
-          badgeList: ['Популярный десерт', 'Шикарное полено!', 'Непревзойдённый банан!'],
+          badgeList: [
+            'Популярный десерт',
+            'Шикарное полено!',
+            'Непревзойдённый банан!'
+          ],
           price: 2100,
           img: image5
         },
@@ -89,7 +94,12 @@ export default {
           name: 'Торт малина-манго-кокос',
           description:
             'Веганский малиновый мусс с кремю из манго и мармеладом из кокоса на кокосово-миндальном бисквите.',
-          badgeList: ['100% VEGAN', 'Фитнес-меню', 'Без глютена', 'Пониженное содержание сахара'],
+          badgeList: [
+            '100% VEGAN',
+            'Фитнес-меню',
+            'Без глютена',
+            'Пониженное содержание сахара'
+          ],
           price: 2100,
           img: image6
         }
@@ -98,10 +108,20 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .card {
   margin-top: 30px;
   min-height: 645px;
+
+  &-title {
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &-text {
+    text-align: left;
+  }
 }
 .card-body {
   display: flex;
@@ -115,16 +135,21 @@ export default {
   margin: 3px;
   padding: 8px;
   text-transform: uppercase;
+
+  &.bg-primary {
+    color: white;
+  }
 }
+
 .bagdes {
   display: flex;
   flex-wrap: wrap;
 }
 .card-price {
-  color:  #0d6efd;
+  color: #0d6efd;
   font-size: 24px;
 }
-.card-price-and-button{
+.card-price-and-button {
   margin-top: auto;
 }
 .card-img {
