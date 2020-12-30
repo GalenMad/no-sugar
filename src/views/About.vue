@@ -12,7 +12,6 @@ import Form from '../components/Form.vue'
 import About from '../components/aboutUs.vue'
 import Order from '../components/Order.vue'
 export default {
-  props: Array,
   components: {
     appPromo: Promo,
     appForm: Form,
