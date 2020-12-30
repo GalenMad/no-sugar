@@ -3,7 +3,7 @@
     <div class="row">
       <div class="card">
         <h2>Напишите нам и мы вам перезвоним !</h2>
-        <form>
+        <form class="order-form">
           <div class="form-group">
             <label for="exampleInputName">Ваше имя</label>
             <input type="text" class="form-control" id="exampleInputName" />
@@ -34,10 +34,15 @@
 <script>
 export default {}
 </script>
-<style scoped>
+<style scoped lang="scss">
 h2 {
   font-weight: bold;
 }
+
+.order-form {
+min-width: 400px;
+}
+
 .form-group {
   width: 50%;
   margin-right: auto;

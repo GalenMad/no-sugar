@@ -1,35 +1,32 @@
 <template>
-  <div>
-    <h2>Акции</h2>
-    <div class="row">
-      <div
-        class="col-12 col-sm-6 col-lg-4 d-flex"
-        v-for="item in catalog"
-        :key="item.index"
-      >
-        <div class="card">
-          <div class="card-header">
-            <div class="card-img" :style="{ backgroundImage: item.img }"></div>
+  <div class="row">
+    <div
+      class="col-12 col-sm-6 col-lg-4 d-flex"
+      v-for="item in catalog"
+      :key="item.index"
+    >
+      <div class="card">
+        <div class="card-header">
+          <div class="card-img" :style="{ backgroundImage: item.img }"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <div class="mb-3 bagdes">
+            <span
+              class="badge bg-primary"
+              v-for="badge in item.badgeList"
+              :key="badge.index"
+              >{{ badge }}</span
+            >
           </div>
-          <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <div class="mb-3 bagdes">
-              <span
-                class="badge bg-primary"
-                v-for="badge in item.badgeList"
-                :key="badge.index"
-                >{{ badge }}</span
-              >
-            </div>
-            <p class="card-text">
-              {{ item.description }}
-            </p>
-          </div>
+          <p class="card-text">
+            {{ item.description }}
+          </p>
+        </div>
 
-          <div class="card-footer">
-            <p class="card-price">{{ item.price }} ₽</p>
-            <a href="#" class="btn btn-primary">Купить</a>
-          </div>
+        <div class="card-footer">
+          <p class="card-price">{{ item.price }} ₽</p>
+          <a href="#" class="btn btn-primary">Купить</a>
         </div>
       </div>
     </div>

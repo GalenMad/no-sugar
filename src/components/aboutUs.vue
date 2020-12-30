@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>О нас</h2>
     <div class="row">
       <div
         class="col-sm-12 col-lg-4 d-flex"
@@ -51,7 +50,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 img {
   max-width: 80px;
   align-self: center;
@@ -63,8 +62,13 @@ img {
   padding: 10px;
   border: 3px solid #0d6efd;
   margin-bottom: 30px;
-}
-.card-text{
-  text-align: left;
+
+  &-title {
+    font-weight: 600;
+  }
+
+  &-text {
+    text-align: left;
+  }
 }
 </style>

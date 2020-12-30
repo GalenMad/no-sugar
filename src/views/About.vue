@@ -1,7 +1,10 @@
 <template>
   <div class="container">
+    <h2>Акции</h2>
     <app-promo/>
+    <h2>Закажите десерт своей мечты!</h2>
     <app-order/>
+    <h2>О нас</h2>
     <app-about/>
     <app-form/>
   </div>

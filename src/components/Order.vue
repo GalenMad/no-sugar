@@ -1,7 +1,7 @@
 <template>
     <div class="row">
       <div class="col-sm-12 col-lg-6">
-        <h2>Как сделать заказ персонального десерта?</h2>
+        <h3 class="text-left">Как сделать заказ персонального десерта?</h3>
         <ol>
           <li>Заполните форму справа</li>
           <li>Мы перезвоним вам, запишем все ваши пожелания и оформим заказ</li>
@@ -9,7 +9,6 @@
         </ol>
       </div>
       <div class="col-sm-12 col-lg-6">
-        <h2>Закажите десерт своей мечты!</h2>
         <form>
           <div class="form-group">
             <label for="inputName">Ваше имя</label>
